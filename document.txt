@@ -1,33 +1,171 @@
-Login
-Registration
-Auth JWT
-
-Register Ass Jober
-Add Post 
-Update Post 
-Delete Post
-Show All Post
-
-
-User
-login
-Registration
-ChangePassword 
-Show All Post 
-Show Post By Id    Application :- Done
-
-
-Jober :- 
-Create Post 
-Update Post 
-Delete Post 
-Get Post 
-Get :- Request 
-Approve/Reject :-Request 
-
-
-Admin 
-Crete Post :-
-Delete Post :- 
-Approve User Status :-
-
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Job Management",
+    "collectionId": "e28ef534-ff8a-4a29-aa7a-5f72800ad01c",
+    "dateExported": "2025-06-25T05:39:19.118Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "d4c464c1-43f8-45f5-84e1-858c1153c605",
+            "name": "Auth",
+            "containerId": "",
+            "created": "2025-06-16T06:26:45.398Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "88cd2197-1336-47de-91bb-843fea6dc2a3",
+            "name": "Post",
+            "containerId": "",
+            "created": "2025-06-18T04:18:22.558Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "8a9d4b63-e352-40cf-a2c1-653f3e8e5886",
+            "colId": "e28ef534-ff8a-4a29-aa7a-5f72800ad01c",
+            "containerId": "d4c464c1-43f8-45f5-84e1-858c1153c605",
+            "name": "Login",
+            "url": "http://192.168.54.43:3000/api/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-06-16T06:26:53.414Z",
+            "modified": "2025-06-19T10:24:45.067Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "// {\n//   \"email\" : \"raval@gmail.com\",\n//   \"password\" : \"raval\"\n// }\n\n\n// {\n//   \"email\" : \"t@gmail.com\",\n//   \"password\" : \"t\"\n// }\n\n// {\n//   \"email\" : \"v@gmail.com\",\n//   \"password\" : \"v\"\n// }\n\n// {\n//   \"email\" : \"l@gmail.com\",\n//   \"password\" : \"l\"\n// }\n\n{\n    \"email\" : \"n@gmail.com\",\n      \"password\" : \"n\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "33643bde-fda7-4300-95d3-4dd21d169750",
+            "colId": "e28ef534-ff8a-4a29-aa7a-5f72800ad01c",
+            "containerId": "d4c464c1-43f8-45f5-84e1-858c1153c605",
+            "name": "Registartion",
+            "url": "http://192.168.54.43:3000/api/registration",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-06-16T06:27:39.488Z",
+            "modified": "2025-06-19T06:14:26.859Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\" : \"lalu bhai\",\n  \"email\" : \"l@gmail.com\",\n  \"password\" : \"l\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "25642521-0390-453e-9869-af61aba95ba8",
+            "colId": "e28ef534-ff8a-4a29-aa7a-5f72800ad01c",
+            "containerId": "88cd2197-1336-47de-91bb-843fea6dc2a3",
+            "name": "UplodePost",
+            "url": "http://192.168.54.43:3000/api/v1/jobs/managejob",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2025-06-18T04:18:30.717Z",
+            "modified": "2025-06-18T09:17:46.334Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY4NGZiOTkwNDFkMjg0ZTY0MTk3MmQwMCIsImVtYWlsIjoicmF2YWxAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwic3RhdHVzIjoiYWN0aXZlIiwiaWF0IjoxNzUwMjIyMzgxLCJleHAiOjE3NTAyMjk1ODF9.4Pn6vT4I7V7EvwNFbtHM0dhLiZBiYRlUz9bMZtOadQI"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Frontend Developer\",\n  \"company\": \"TechCo\",\n  \"description\": \"We need a React developer\",\n  \"location\": \"Remote\",\n  \"salary\": \"6-10 LPA\",\n  \"type\": \"full-time\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "7bcbd251-5e8c-4aff-b3d9-daa4b5149a84",
+            "colId": "e28ef534-ff8a-4a29-aa7a-5f72800ad01c",
+            "containerId": "88cd2197-1336-47de-91bb-843fea6dc2a3",
+            "name": "AllJobList",
+            "url": "http://192.168.54.43:3000/api/v1/jobs/managejob",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2025-06-18T05:50:05.440Z",
+            "modified": "2025-06-18T09:17:56.261Z",
+            "headers": []
+        },
+        {
+            "_id": "0ec922e9-02a5-46d7-a70d-c6c8fafb38df",
+            "colId": "e28ef534-ff8a-4a29-aa7a-5f72800ad01c",
+            "containerId": "88cd2197-1336-47de-91bb-843fea6dc2a3",
+            "name": "PerticularJob",
+            "url": "http://192.168.54.43:3000/api/v1/jobs/managejob/68524e1bab62b6f3deac89eb",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2025-06-18T06:03:27.330Z",
+            "modified": "2025-06-18T09:18:08.609Z",
+            "headers": []
+        },
+        {
+            "_id": "3dec19fa-c7df-48ae-8b85-9bf36a515f01",
+            "colId": "e28ef534-ff8a-4a29-aa7a-5f72800ad01c",
+            "containerId": "d4c464c1-43f8-45f5-84e1-858c1153c605",
+            "name": "Profile",
+            "url": "http://192.168.54.43:3000/api/v1/profile",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2025-06-18T09:28:04.189Z",
+            "modified": "2025-06-18T09:28:36.631Z",
+            "headers": []
+        },
+        {
+            "_id": "54138ba4-0357-476a-97bf-9d82cfba47bb",
+            "colId": "e28ef534-ff8a-4a29-aa7a-5f72800ad01c",
+            "containerId": "d4c464c1-43f8-45f5-84e1-858c1153c605",
+            "name": "AdminAllData",
+            "url": "http://192.168.54.43:3000/api/v1/admin/getalldata",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2025-06-18T12:58:05.932Z",
+            "modified": "2025-06-18T12:58:36.024Z",
+            "headers": []
+        },
+        {
+            "_id": "d7fc64c3-b9ca-4dac-9f56-945787943391",
+            "colId": "e28ef534-ff8a-4a29-aa7a-5f72800ad01c",
+            "containerId": "d4c464c1-43f8-45f5-84e1-858c1153c605",
+            "name": "UpdateUserStatus",
+            "url": "http://192.168.54.43:3000/api/v1/admin/changeStatus",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2025-06-19T06:11:50.668Z",
+            "modified": "2025-06-19T07:05:30.938Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"status\" : \"panding\",\n  \"userId\" : \"6853aac2b3d1d30398568343\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b3d1c74f-5ee4-4d0a-8634-772532ec82c7",
+            "colId": "e28ef534-ff8a-4a29-aa7a-5f72800ad01c",
+            "containerId": "d4c464c1-43f8-45f5-84e1-858c1153c605",
+            "name": "GetPandingUser",
+            "url": "http://192.168.54.43:3000/api/v1/admin/getPandingUser",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2025-06-19T07:03:33.080Z",
+            "modified": "2025-06-19T07:03:48.815Z",
+            "headers": []
+        },
+        {
+            "_id": "6ac7e0bd-caf6-4db0-acfa-60175ba7e940",
+            "colId": "e28ef534-ff8a-4a29-aa7a-5f72800ad01c",
+            "containerId": "d4c464c1-43f8-45f5-84e1-858c1153c605",
+            "name": "ApplyedJobDetails",
+            "url": "http://192.168.54.43:3000/api/v1/jobs/appliedjobs",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2025-06-19T10:23:13.754Z",
+            "modified": "2025-06-19T10:24:03.653Z",
+            "headers": []
+        }
+    ],
+    "ref": "gK_7ZwcfsF9vUoQPvw597r9JpWrQqgKCWsLFG3E-r4Tp8iJkbqk0Fd1a0JgEHWPjbPagYW_O6PWtsIaNOyJeVA"
+}
