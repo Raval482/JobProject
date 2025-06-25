@@ -1,26 +1,51 @@
 @import "tailwindcss";
 
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  /* 🌟 Brand Colors */
+  --primary-color: #2563eb;       /* Blue-600: Brand primary */
+  --secondary-color: #10b981;     /* Emerald-500: Success */
+  --accent-color: #f97316;        /* Orange-500: Highlights or CTAs */
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* ⚠️ Semantic Colors */
+  --danger-color: #dc2626;        /* Red-600 */
+  --warning-color: #facc15;       /* Yellow-400 */
+  --success-color: #22c55e;       /* Green-500 */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* 🧱 UI Surface Colors */
+  --background-color: #f9fafb;    /* Slate-50: Page background */
+  --card-color: #ffffff;          /* White: Card, form background */
+  --muted-color: #f3f4f6;         /* Gray-100: Muted input background */
+
+  /* 🖋️ Text Colors */
+  --text-color: #1f2937;          /* Gray-800: Main text */
+  --subtext-color: #6b7280;       /* Gray-500: Secondary text */
+  --link-color: #2563eb;          /* Blue-600: Links */
+
+  /* 🔲 Borders & Hover */
+  --border-color: #e5e7eb;        /* Gray-200: Input borders */
+  --hover-color: #3b82f6;         /* Blue-500: Hover state */
+
+  /* 🌑 Optional Dark Mode Base */
+  --dark-bg: #0f172a;             /* Slate-900 */
+  --dark-card: #1e293b;           /* Slate-800 */
+  --dark-text: #f1f5f9;           /* Slate-100 */
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background-color);
+  color: var(--dark-color);
+}
+
+
+.glass-container {
+  @apply bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/20 shadow-xl;
+}
+
+.glass-card {
+  @apply bg-white/10 p-4 rounded-lg border border-white/20 hover:scale-105 transition transform duration-300 backdrop-blur-sm;
+}
+
+.delete-btn {
+  @apply mt-4 px-4 py-2 bg-red-600 hover:bg-red-700 rounded text-white;
 }

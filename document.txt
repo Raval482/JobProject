@@ -1,0 +1,33 @@
+Login
+Registration
+Auth JWT
+
+Register Ass Jober
+Add Post 
+Update Post 
+Delete Post
+Show All Post
+
+
+User
+login
+Registration
+ChangePassword 
+Show All Post 
+Show Post By Id    Application :- Done
+
+
+Jober :- 
+Create Post 
+Update Post 
+Delete Post 
+Get Post 
+Get :- Request 
+Approve/Reject :-Request 
+
+
+Admin 
+Crete Post :-
+Delete Post :- 
+Approve User Status :-
+
